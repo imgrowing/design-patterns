@@ -6,6 +6,7 @@ public class WeatherStation {
         Observer currentConditionDisplay = new CurrentConditionDisplay(weatherData);
         Observer statisticsDisplay = new StatisticsDisplay(weatherData);
         Observer forecastDisplay = new ForecastDisplay(weatherData);
+        Observer heatIndex = new HeatIndexDisplay(weatherData);
 
         weatherData.setMeasurements(23, 56, 1024);
         weatherData.setMeasurements(27, 52, 1004);
